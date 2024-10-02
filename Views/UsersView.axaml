@@ -3,7 +3,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
-             x:Class="CRUDAPP.Views.UsersView">
+             x:Class="CRUDAPP.Views.UsersView"
+             xmlns:views="clr-namespace:CRUDAPP.Views;assembly=CRUDAPP" 
+             x:DataType="views:UsersView"
+             >
             <Grid>
                 <Grid.RowDefinitions>
                   <RowDefinition Height="auto"/>
@@ -15,5 +18,22 @@
                   <Button x:Name="RemoveButton" Content="Удалить" Click="RemoveButton_Click"/>
                   <Button x:Name="PrintButton" Content="Печать" Click="PrintButton_Click"/>
                 </StackPanel>
+                <ListBox Grid.Row="1" x:Name="UsersListBox" ItemsSource="{Binding Users}">
+                  <ListBox.ItemTemplate>
+                    <DataTemplate>
+                      <StackPanel Orientation="Vertical">
+                        <Image/>
+                        <StackPanel Orientation="Horizontal">
+                          <TextBlock Margin="10 0" Text="Фамилия"/>  
+                          <TextBlock Text="{Binding Lastname}"/>
+                          <TextBlock Margin="10 0" Text="Имя"/>
+                          <TextBlock Text="{Binding Firstname}"/>
+                          <TextBlock Margin="10 0" Text="Отчество"/>
+                          <TextBlock Text="{Binding Middlename}"/>
+                        </StackPanel>
+                      </StackPanel>
+                    </DataTemplate>
+                    </ListBox.ItemTemplate>
+                  </ListBox>
             </Grid>
 </UserControl>

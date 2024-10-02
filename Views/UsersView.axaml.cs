@@ -1,14 +1,23 @@
+using System.Collections.Generic;
+using System.Linq;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using CRUDAPP.Entities;
 
 namespace CRUDAPP.Views;
 
 public partial class UsersView : UserControl
 {
+    public List<User> Users { get; set; }
+    TestContext context;
     public UsersView()
     {
         InitializeComponent();
+        context = new TestContext();
+        Users = context.Users.ToList(); 
+        DataContext = this; 
+
     }
 private void InitializeComponent()
 {
