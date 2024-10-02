@@ -25,7 +25,7 @@
             <TextBox Text="{Binding User.Middlename}"/> 
         </StackPanel> 
         <StackPanel Orientation="Horizontal"> 
-            <Button Content="Сохранить" /> 
+            <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Сохранить" /> 
             <Button x:Name="CloseButton" Click="CloseButton_Click" Content="Отмена" /> 
         </StackPanel> 
     </StackPanel>
