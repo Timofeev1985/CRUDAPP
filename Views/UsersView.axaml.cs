@@ -15,24 +15,31 @@ public partial class UsersView : UserControl
     {
         InitializeComponent();
         context = new TestContext();
-        Users = context.Users.ToList(); 
-        DataContext = this; 
+        Users = context.Users.ToList();
+        DataContext = this;
 
     }
-private void InitializeComponent()
-{
-    AvaloniaXamlLoader.Load(this);
-}  
-private void AddButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    private void InitializeComponent()
     {
-            }
-private void EditButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        AvaloniaXamlLoader.Load(this);
+    }
+    private void AddButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-            }
-private void RemoveButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    }
+    private void EditButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-            }
-private void PrintButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    }
+    private void RemoveButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-            }
+        var UsersListBox = this.FindControl<ListBox>("UsersListBox");
+        if (UsersListBox.SelectedItem is User user)
+        {
+            context.Users.Remove(user);
+            context.SaveChanges();
+            App.MainWindow.MainContentControl.Content = new UsersView();
+        }
+    }
+    private void PrintButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+    }
 }
