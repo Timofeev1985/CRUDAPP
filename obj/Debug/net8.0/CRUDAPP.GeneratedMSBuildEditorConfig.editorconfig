@@ -25,5 +25,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [c:/Users/Student/Desktop/project/CRUDAPP/CRUDAPP/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[c:/Users/Student/Desktop/project/CRUDAPP/CRUDAPP/Views/UserEditView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [c:/Users/Student/Desktop/project/CRUDAPP/CRUDAPP/Views/UsersView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -25,9 +25,14 @@ public partial class UsersView : UserControl
     }
     private void AddButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
+        App.MainWindow.MainContentControl.Content = new UserEditView(new User());
     }
     private void EditButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
+         var UsersListBox = this.FindControl<ListBox>("UsersListBox");  
+            if (UsersListBox.SelectedItem is User user){ 
+                App.MainWindow.MainContentControl.Content = new UserEditView(user); 
+            }  
     }
     private void RemoveButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {

@@ -1,0 +1,32 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             Background="#fefae0"
+             x:Class="CRUDAPP.Views.UserEditView"
+            xmlns:views="clr-namespace:CRUDAPP.Views;assembly=CRUDAPP" 
+             x:DataType="views:UserEditView"
+             >
+ <StackPanel Width="500" > 
+        <Image  HorizontalAlignment="Center"/> 
+        <Button x:Name="LoadImageButton" HorizontalAlignment="Center" 
+                Content="Загрузить изображение" /> 
+        <StackPanel> 
+            <TextBlock Text="Фамилия" Margin="10"/> 
+            <TextBox Text="{Binding User.Lastname}"/> 
+        </StackPanel> 
+        <StackPanel> 
+            <TextBlock Text="Имя" Margin="10"/> 
+            <TextBox Text="{Binding User.Firstname}"/> 
+        </StackPanel> 
+        <StackPanel> 
+            <TextBlock Text="Отчество" Margin="10"/> 
+            <TextBox Text="{Binding User.Middlename}"/> 
+        </StackPanel> 
+        <StackPanel Orientation="Horizontal"> 
+            <Button Content="Сохранить" /> 
+            <Button x:Name="CloseButton" Click="CloseButton_Click" Content="Отмена" /> 
+        </StackPanel> 
+    </StackPanel>
+</UserControl>
