@@ -14,4 +14,16 @@ private void InitializeComponent()
 {
     AvaloniaXamlLoader.Load(this);
 }  
+private void AddButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+            }
+private void EditButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+            }
+private void RemoveButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+            }
+private void PrintButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+            }
 }
