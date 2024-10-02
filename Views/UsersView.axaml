@@ -4,5 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="CRUDAPP.Views.UsersView">
-  Welcome to Avalonia!
+            <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="auto"/>
+                  <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                  <Button x:Name="AddButton" Content="Добавить"/>
+                  <Button x:Name="EditButton" Content="Изменить"/>
+                  <Button x:Name="RemoveButton" Content="Удалить"/>
+                  <Button x:Name="PrintButton" Content="Печать"/>
+                </StackPanel>
+            </Grid>
 </UserControl>

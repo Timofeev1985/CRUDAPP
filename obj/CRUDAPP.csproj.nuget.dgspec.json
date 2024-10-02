@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Desktop\\project\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj": {}
+    "c:\\Users\\Student\\Desktop\\project\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Desktop\\project\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj": {
+    "c:\\Users\\Student\\Desktop\\project\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Desktop\\project\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj",
+        "projectUniqueName": "c:\\Users\\Student\\Desktop\\project\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj",
         "projectName": "CRUDAPP",
-        "projectPath": "C:\\Users\\Student\\Desktop\\project\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj",
+        "projectPath": "c:\\Users\\Student\\Desktop\\project\\CRUDAPP\\CRUDAPP\\CRUDAPP.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Desktop\\project\\CRUDAPP\\CRUDAPP\\obj\\",
+        "outputPath": "c:\\Users\\Student\\Desktop\\project\\CRUDAPP\\CRUDAPP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
